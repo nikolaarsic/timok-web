@@ -255,7 +255,7 @@
       } else {
         document.getElementById('pw-error').textContent = 'Wrong password.';
         document.getElementById('pw-input').value = '';
-        document.getElementById('pw-input').focus();
+        setTimeout(function() { document.getElementById('pw-input').focus(); }, 50);
       }
     }
 
