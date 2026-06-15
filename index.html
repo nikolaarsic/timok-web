@@ -69,7 +69,7 @@
     }
 
     .about {
-      width: 960px;
+      width: 1152px;
       margin: 24px 0 0;
       line-height: 1.8;
       color: #bbb;
@@ -80,10 +80,11 @@
     .about strong { color: #fff; }
 
     .tags {
-      margin-top: 14px;
-      display: flex;
+      display: inline-flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 6px;
+      margin-left: 8px;
+      vertical-align: middle;
     }
 
     .tags span {
@@ -100,7 +101,7 @@
       background: #1a1a1a;
       border: 1px solid #333;
       border-radius: 10px;
-      padding: 18px 40px;
+      padding: 10px 40px;
       display: flex;
       gap: 48px;
       align-items: flex-start;
@@ -117,7 +118,7 @@
     .controls ul {
       list-style: none;
       font-size: 0.88rem;
-      line-height: 1.9;
+      line-height: 1.5;
       color: #ccc;
     }
 
@@ -221,12 +222,9 @@
 
   <div class="about">
     <p>You're Luigi. It's lunchtime. Nordeans are hungry.</p>
-    <p>Race through the kitchen and serve food before the queue explodes. Every meeting that ends sends a fresh wave of hungry Nordeans your way.</p>
+    <p>Race through the kitchen and serve food before the queue explodes. Every meeting that ends brings a fresh wave of hungry Nordeans.</p>
     <p>Upgrade your moves, master the dash, and prove you're the fastest cook in the building.</p>
-    <p><strong>The cafeteria line stops for no one.</strong></p>
-    <div class="tags">
-      <span>#arcade</span><span>#racing</span><span>#endless</span><span>#highscores</span><span>#powerups</span><span>#topdown</span><span>#fooddelivery</span><span>#onemorewav</span>
-    </div>
+    <p><strong>The cafeteria line stops for no one.</strong> <span class="tags"><span>#arcade</span><span>#endless</span><span>#highscores</span><span>#topdown</span></span></p>
   </div>
 
   <div class="controls">
