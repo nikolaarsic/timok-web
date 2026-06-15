@@ -262,6 +262,15 @@
     document.getElementById('pw-input').addEventListener('keydown', function(e) {
       if (e.key === 'Enter') checkPassword();
     });
+
+    // Keep focus on input while overlay is visible
+    var pwOverlay = document.getElementById('pw-overlay');
+    var pwInput = document.getElementById('pw-input');
+    document.addEventListener('focusin', function(e) {
+      if (pwOverlay.style.display !== 'none' && e.target !== pwInput) {
+        setTimeout(function() { pwInput.focus(); }, 0);
+      }
+    });
   </script>
 
   <script>
